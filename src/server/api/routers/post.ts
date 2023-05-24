@@ -8,8 +8,10 @@ import {
 
 export const createPost = protectedProcedure
   .input(z.object({ text: z.string().min(1) }))
-  .mutation((opts) => {
-    console.log("Creating post", opts.input.text);
+  .mutation(async (opts) => {
+    // simulate a slow db call
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
     return opts.ctx.db.post.create({
       data: {
         text: opts.input.text,
@@ -39,8 +41,4 @@ export const postRouter = createTRPCRouter({
   }),
 
   create: createPost,
-
-  getSecretMessage: protectedProcedure.query(() => {
-    return "this is a secret message!";
-  }),
 });
