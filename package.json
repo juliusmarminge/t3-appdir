@@ -1,0 +1,39 @@
+{
+  "name": "t3-appdir",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next-auth/prisma-adapter": "^1.0.6",
+    "@prisma/client": "^4.14.1",
+    "@t3-oss/env-nextjs": "^0.3.1",
+    "@trpc/client": "^10.27.1",
+    "@trpc/next": "^10.27.1",
+    "@trpc/server": "^10.27.1",
+    "next": "13.4.3",
+    "next-auth": "^4.22.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "superjson": "^1.12.3",
+    "tailwind-merge": "^1.12.0",
+    "typescript": "5.0.4",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "20.2.3",
+    "@types/prettier": "^2.7.2",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "autoprefixer": "10.4.14",
+    "postcss": "8.4.23",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "prisma": "^4.14.1",
+    "tailwindcss": "3.3.2"
+  }
+}
