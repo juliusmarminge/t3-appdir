@@ -1,0 +1,7 @@
+{
+  "name": "Create T3 App",
+  "short_name": "",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
