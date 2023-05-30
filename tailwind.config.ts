@@ -46,4 +46,7 @@ export default {
       },
     },
   },
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
 } satisfies Config;

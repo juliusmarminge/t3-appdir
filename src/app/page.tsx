@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { createPost } from "~/app/actions";
-import { Button } from "~/ui/button";
+import { Button } from "~/components/ui/button";
 import { getServerSession } from "~/server/auth";
 import { api } from "~/trpc/server";
 import Link from "next/link";

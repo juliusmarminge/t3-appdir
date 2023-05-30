@@ -4,7 +4,7 @@ import * as React from "react";
 import { Session } from "next-auth";
 import { createPost } from "./actions";
 import { useAction } from "~/trpc/client";
-import { Button } from "~/ui/button";
+import { Button } from "~/components/ui/button";
 
 export function ClientPostForm(props: { session: Session | null }) {
   const action = useAction(createPost);
